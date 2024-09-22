@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    background-color: #0f1624;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #10172a;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 900;
+    color: #fff;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1d9bf0;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons .btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sign-in {
+    background-color: transparent;
+    border: 1px solid #7289da;
+}
+
+.sign-up {
+    background-color: #7289da;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.hero {
+    text-align: center;
+    padding: 150px 0;
+    background: linear-gradient(135deg, #1e2742, #0a0e1a);
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 1.5em;
+    color: #b0b7c3;
+}
+
+.btn-hero {
+    background-color: #7289da;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-hero:hover {
+    background-color: #5b6cae;
+}
+
+.features {
+    padding: 100px 0;
+    background-color: #111827;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature {
+    background-color: #1f2937;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #7289da;
+}
+
+.feature p {
+    color: #b0b7c3;
+}
+
+.pricing {
+    padding: 100px 0;
+    background-color: #0f1624;
+}
+
+.pricing h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: #1e2742;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex: 1 1 300px;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    color: #7289da;
+}
+
+.pricing-card p {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #7289da;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.destaque {
+    background-color: #7289da;
+    color: #fff;
+    border-radius: 10px;
+}
+
+#faq {
+    padding: 60px 20px;
+    margin-bottom: 60px;
+}
+
+#faq h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.faq-question {
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #252a38;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.faq-answer {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #2f3545;
+    border-radius: 8px;
+    display: none;
+}
+
+.faq-question:hover {
+    background-color: #333847;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #0a0e1a;
+    color: #b0b7c3;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-grid {
+        flex-direction: column;
+    }
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #10172a;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #4a8cf7;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+}
+
+.btn {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.sign-in {
+    background-color: #4a8cf7;
+    color: #fff;
+}
+
+.sign-up {
+    background-color: #5b9def;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #3a7ae0;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #10172a;
+        padding: 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .navigation.active {
+        display: flex;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .btn {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+@media (min-width: 769px) {
+    .navigation {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        gap: 15px;
+        box-shadow: none;
+        align-items: center;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 40px;
+    }
+
+    .nav-list li:first-child {
+        margin-left: 50px;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-list a {
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-list a {
+        text-decoration: none;
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-list a {
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-list {
+        flex-direction: row;
+        gap: 40px;
+        margin-right: auto;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+    }
+
+    .auth-buttons {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+}

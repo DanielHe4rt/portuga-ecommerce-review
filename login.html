@@ -1,0 +1,39 @@
+<?php
+// Se necessário, você pode incluir a lógica de autenticação aqui.
+?>
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="assets/images/" type="image/x-icon">
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="processar_login.php" method="POST"> 
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Entrar</button>
+        </form>
+        <p><a href="recuperar_senha.php">Esqueceu a senha?</a></p> 
+        <p class="link-text">Voltar para <a href="index.html">home</a></p>
+
+    </div>
+
+</body>
+</html>

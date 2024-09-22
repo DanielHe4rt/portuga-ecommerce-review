@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>João</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/images/" type="image/x-icon">
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://sellix.io/static/js/embed.js"></script>
+    <script src="https://cdn.sellix.io/static/js/embed.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">João</div>
+            <nav class="navigation" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn sign-in">Sign in</a>
+                    <a href="login.html" class="btn sign-in">Create account </a>
+                </div>
+            </nav>
+            <div class="hamburger-menu" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2 data-aos="fade-up">Insira Seu Texto Atraente Aqui</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Adicione uma frase que capture a atenção do seu público-alvo.</p>
+            <div>
+                <a href="#pricing" class="btn-hero" data-aos="zoom-in" data-aos-delay="400">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 data-aos="fade-up">Features</h2>
+            <div class="feature-grid">
+                <div class="feature" data-aos="fade-right">
+                    <h3>Coloque o Seu Texto Aqui</h3>
+                    <p>Adicione uma descrição breve sobre esta funcionalidade.</p>
+                </div>
+                <div class="feature" data-aos="fade-left" data-aos-delay="100">
+                    <h3>Insira Seu Texto Aqui</h3>
+                    <p>Descreva a importância desta funcionalidade para o usuário.</p>
+                </div>
+                <div class="feature" data-aos="fade-right" data-aos-delay="200">
+                    <h3>Seu Título Aqui</h3>
+                    <p>Inclua uma breve explicação sobre o que esta funcionalidade faz.</p>
+                </div>
+                <div class="feature" data-aos="fade-left" data-aos-delay="300">
+                    <h3>Texto Personalizado Aqui</h3>
+                    <p>Forneça informações adicionais que destaquem essa funcionalidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <div class="faq-question">Coloque sua pergunta aqui</div>
+                <div class="faq-answer">Insira a resposta para esta pergunta de forma clara e concisa.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Adicione outra pergunta aqui</div>
+                <div class="faq-answer">Descreva a solução ou informação relevante nesta resposta.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Escreva mais uma pergunta aqui</div>
+                <div class="faq-answer">Forneça detalhes que ajudem o usuário a entender melhor.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Insira sua última pergunta aqui</div>
+                <div class="faq-answer">Coloque informações adicionais ou recursos que podem ser úteis.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Preços</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-right">
+                    <h3>Coloque o Nome do Plano Aqui</h3>
+                    <p class="price">€XX.XX</p>
+                    <ul>
+                        <li>Descrição do benefício 1</li>
+                        <li>Descrição do benefício 2</li>
+                        <li>Descrição do benefício 3</li>
+                        <li>Descrição do benefício 4</li>
+                        <li>Descrição do benefício 5</li>
+                        <li>Descrição do benefício 6</li>
+                    </ul>
+                    <a href="#" class="btn" data-sellix-product="">Adquirir</a>
+                </div>
+                <div class="pricing-card" data-aos="fade-left" data-aos-delay="200">
+                    <h3>Nome do Plano em Destaque Aqui</h3>
+                    <p class="price">€XX.XX</p>
+                    <ul>
+                        <li>Descrição do benefício 1</li>
+                        <li>Descrição do benefício 2</li>
+                        <li>Descrição do benefício 3</li>
+                        <li>Descrição do benefício 4</li>
+                        <li>Descrição do benefício 5</li>
+                        <li>Descrição do benefício 6</li>
+
+
+                    </ul>
+                    <a href="#" class="btn destaque-btn" data-sellix-product="">Adquirir</a>
+                </div>
+                <div class="pricing-card" data-aos="fade-left" data-aos-delay="200">
+                    <h3>Nome do Último Plano Aqui</h3>
+                    <p class="price">€XX.XX</p>
+                    <ul>
+                        <li>Descrição do benefício 1</li>
+                        <li>Descrição do benefício 2</li>
+                        <li>Descrição do benefício 3</li>
+                        <li>Descrição do benefício 4</li>
+                        <li>Descrição do benefício 5</li>
+                        <li>Descrição do benefício 6</li>
+                    </ul>
+                    <a href="#" class="btn" data-sellix-product="">Adquirir</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 João. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const faqItem = item.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Menu Toggle
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
